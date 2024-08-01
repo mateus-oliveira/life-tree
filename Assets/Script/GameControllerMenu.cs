@@ -7,6 +7,12 @@ using UnityEngine.SceneManagement;
 
 public class GameControllerMenu : MonoBehaviour
 {
+    [SerializeField]
+    AudioSource m_AudioSource;
+    void Start()
+    {
+        m_AudioSource.Play();
+    }
     public void StartTheGame()
     {
         SceneManager.LoadScene("Introduction");
