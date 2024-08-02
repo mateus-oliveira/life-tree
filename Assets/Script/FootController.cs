@@ -21,7 +21,6 @@ public class FootController : MonoBehaviour {
     }
 
     void OnTriggerEnter(Collider other) {
-        Debug.Log("Is grounded");
         isGrounded = true;
         controller.SetJumpAnimation(false); 
     }

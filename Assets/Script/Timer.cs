@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using TMPro;
 
@@ -22,7 +23,7 @@ public class Timer : MonoBehaviour
 
     private void DecreaseTime(){
         if(timeValue <= 0f){
-            //Chamar a função de game over.
+            this.Success();
             return;
         }
 
@@ -48,5 +49,9 @@ public class Timer : MonoBehaviour
         float seconds = Mathf.FloorToInt(timeToDisplay%60);
 
         txtTime.text = string.Format("{0:00}.{1:00}", minutes, seconds);
+    }
+
+    private void Success() {
+        SceneManager.LoadScene("Success");
     }
 }
