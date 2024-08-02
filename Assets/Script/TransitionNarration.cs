@@ -38,7 +38,7 @@ public class TransitionNarration : MonoBehaviour
         if (stopLegendas)
         {
             //Passar para a scena do jogo
-            Invoke("HideRobot", 3f);
+            
         }
     }
 
