@@ -22,4 +22,9 @@ public class GameControllerMenu : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void ReturnToMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
 }
