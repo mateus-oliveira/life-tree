@@ -1,0 +1,234 @@
+fileFormatVersion: 2
+guid: e827f0f4cd083504c896080f4574f7fb
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Doctor_Body_Diffuse
+    second: {fileID: 2800000, guid: 719da59b18f91d64b89e251cbb6b9d09, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Doctor_Body_Gloss
+    second: {fileID: 2800000, guid: bbc592f87e6feb740a02bd1586b53da5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Doctor_Body_Normal
+    second: {fileID: 2800000, guid: 4d0f6638ef6071c4184724192bf94c4d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Doctor_Body_Opacity
+    second: {fileID: 2800000, guid: 04fb2282dcdcdbd478001f103cb5bb87, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Doctor_Body_Specular
+    second: {fileID: 2800000, guid: 4ab29f3795ba7b14bba0f482e5b962c5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Doctor_Bottom_Diffuse
+    second: {fileID: 2800000, guid: ce2dbfdb8b477384da0cc3be32aa77b4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Doctor_Bottom_Gloss
+    second: {fileID: 2800000, guid: 48c32823d6b551c4bb0d16e55df498dc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Doctor_Bottom_Normal
+    second: {fileID: 2800000, guid: 8936e45395054854fa8a093abdfc4bb5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Doctor_Bottom_Opacity
+    second: {fileID: 2800000, guid: 684600a1ef8ccb2418760ceb47591077, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Doctor_Bottom_Specular
+    second: {fileID: 2800000, guid: 9260cb41f4c750e4ab528aafa7fcd932, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Doctor_Hair_Diffuse
+    second: {fileID: 2800000, guid: 44a1040e658a34d4f9d0b70698a0a0f3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Doctor_Hair_Gloss
+    second: {fileID: 2800000, guid: ec4f44a1b38bbcb4c82dc1824fe55bb1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Doctor_Hair_Normal
+    second: {fileID: 2800000, guid: c424fee50e23a9b429903601e8b7afaf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Doctor_Hair_Opacity
+    second: {fileID: 2800000, guid: 7920b8aabaca371459b5524718e4bb06, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Doctor_Hair_Specular
+    second: {fileID: 2800000, guid: e0da291ceca27334c868091a968987f7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Doctor_Shoes_Diffuse
+    second: {fileID: 2800000, guid: 5e8557a72ec0249459929ef3ee5262c2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Doctor_Shoes_Gloss
+    second: {fileID: 2800000, guid: feb9b5fc4f7b94d459aec1a38640bd0d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Doctor_Shoes_Normal
+    second: {fileID: 2800000, guid: c381681127fa50b4faca964bad355a13, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Doctor_Shoes_Opacity
+    second: {fileID: 2800000, guid: 8aeaab1c623f04744a1040e1bdefb158, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Doctor_Shoes_Specular
+    second: {fileID: 2800000, guid: 92165d383ff9ea545832ebebf4f84c01, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Doctor_Top_Diffuse
+    second: {fileID: 2800000, guid: fbfff4feb1b144341892fb6616da1755, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Doctor_Top_Gloss
+    second: {fileID: 2800000, guid: 0f641855e91988d4680af4242d9ac5d2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Doctor_Top_Normal
+    second: {fileID: 2800000, guid: d21a4ef213ef7e94a9245f97d88639bf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Doctor_Top_Opacity
+    second: {fileID: 2800000, guid: cb7df567ab2775d4f8c30342c4980a86, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Doctor_Top_Specular
+    second: {fileID: 2800000, guid: e50971b40ce79d24f85a322ef34c606f, type: 3}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
