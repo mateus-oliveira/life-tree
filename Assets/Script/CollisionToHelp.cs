@@ -4,72 +4,81 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CollisionToHelp : MonoBehaviour
-{
-    private bool isNextToPlayer, isPressingH;
-    [SerializeField] private Slider slider;
-    [SerializeField] private Text helpMessage;
-    private float speed;
 
-    private void Start()
-    {
+public class CollisionToHelp : MonoBehaviour {
+    private float speed;
+    private bool isNextToPlayer, isPressingH, helpFinished;
+    private Animator animator;
+    [SerializeField] private bool isAnimal;
+    [SerializeField] private Slider slider;
+    [SerializeField] private Text helpMessageText;
+    [SerializeField] private string helpMessage = "";
+
+    private void Start() {
         isNextToPlayer = false;
         isPressingH = false;
-        helpMessage.text = "Ajude por favor!!";
+        helpFinished = false;
+        helpMessageText.text = helpMessage;
         slider.gameObject.SetActive(isPressingH && isNextToPlayer);
         speed = 30f;
+        animator = GetComponent<Animator>();
     }
-    private void Update()
-    {
-        if (isNextToPlayer)
-        {
-            if (isPressingH)
-            {
-                helpMessage.text = "";
-                slider.value += speed * Time.deltaTime;
 
-            }
-            else
-            {
-                helpMessage.text = "Pressione H para ajudar";
-                slider.value -= speed * Time.deltaTime;
-            }
-        }
-        else
-        {
-            helpMessage.text = "Ajude por favor!!";
-        }
+    private void Update() {
+        if (!helpFinished) {
+            if (isNextToPlayer) {
+                if (isPressingH) {
+                    helpMessageText.text = "";
+                    slider.value += speed * Time.deltaTime;
 
-        slider.gameObject.SetActive(isPressingH && isNextToPlayer);
-        if (Input.GetKey(KeyCode.H))
-        {
-            Debug.Log("Pressionando H");
-            isPressingH = true;
-        }
-        else
-        {
-            isPressingH = false;
+                } else {
+                    helpMessageText.text = "Pressione H para ajudar";
+                    slider.value -= speed * Time.deltaTime;
+                }
+            } else {
+                helpMessageText.text = helpMessage;
+            }
+
+            slider.gameObject.SetActive(isPressingH && isNextToPlayer);
+            isPressingH = Input.GetKey(KeyCode.H);
         }
 
         slider.value = Mathf.Clamp(slider.value, slider.minValue, slider.maxValue);
+        if (slider.value >= slider.maxValue) {
+            helpFinished = true;
+        }
+
+        if (helpFinished) {
+            slider.gameObject.SetActive(false);
+            if (!isAnimal) {
+                helpMessageText.text = "Obrigado!";
+                this.SetDestroyAnimation();
+            } else {
+                this.SelfDestroy();
+            }
+
+        }
     }
 
-    public void OnTriggerEnter(Collider collision)
-    {
+    public void OnTriggerEnter(Collider collision) {
         Debug.Log("Entrando na colisão...");
-        if (collision.gameObject.CompareTag("Player"))
-        {
+        if (collision.gameObject.CompareTag("Player")) {
             isNextToPlayer = true;
         }
     }
 
-    public void OnTriggerExit(Collider collision)
-    {
-        Debug.Log("Entrando na colisão...");
-        if (collision.gameObject.CompareTag("Player"))
-        {
+    public void OnTriggerExit(Collider collision) {
+        if (collision.gameObject.CompareTag("Player")) {
             isNextToPlayer = false;
         }
+    }
+
+    private void SetDestroyAnimation() {
+        animator.SetBool("Waving", true);
+    }
+
+    public void SelfDestroy() {
+        Destroy(gameObject);
     }
 
 }
